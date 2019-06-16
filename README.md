@@ -9,17 +9,17 @@ $ npx rewrite-lockfile <path>
 ```
 
 ## Usage
+
+In order to automatically rewrite lockfile on every installation, install it as dev dependency:
 ```
-rewrite-lockfile v1.0.0 - Rewrite npm's lockfile/shrinkwrap to ensure secure registry url
-s are being used
+$ npm install --save-dev rewrite-lockfile
+```
+and add following script to your `package.json`:
 
-Usage:
-  rewrite-lockfile <path>
-
-Options
-  -h, --help      Show help
-  -v, --version   Show version number
-
-Homepage:     https://github.com/vladimyr/rewrite-lockfile
-Report issue: https://github.com/vladimyr/rewrite-lockfile/issues
+```json
+{
+  "scripts": {
+    "postshrinkwrap": "rewrite-lockfile package-lock.json"
+  }
+}
 ```
