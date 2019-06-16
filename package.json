@@ -1,6 +1,6 @@
 {
   "name": "rewrite-lockfile",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Rewrite npm's lockfile/shrinkwrap to ensure secure registry urls are being used",
   "main": "index.js",
   "bin": "cli.js",
