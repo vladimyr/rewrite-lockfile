@@ -1,0 +1,56 @@
+{
+  "name": "rewrite-lockfile",
+  "version": "0.0.0",
+  "description": "Rewrite npm's lockfile/shrinkwrap to ensure secure registry urls are being used",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "tape tests/test.js | tap-spec"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "package-lock",
+    "shrinkwrap",
+    "lockfile",
+    "rewrite",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vladimyr/rewrite-lockfile.git"
+  },
+  "author": {
+    "email": "d.vladimyr+dev@gmail.com",
+    "name": "Dario Vladovic",
+    "url": "https://github.com/vladimyr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladimyr/rewrite-lockfile/issues"
+  },
+  "homepage": "https://github.com/vladimyr/rewrite-lockfile",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "fd-slicer": "^1.1.0",
+    "meow": "^5.0.0",
+    "pumpify": "^2.0.0",
+    "split2": "^3.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "execa": "^1.0.0",
+    "pump": "^3.0.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.2"
+  }
+}
