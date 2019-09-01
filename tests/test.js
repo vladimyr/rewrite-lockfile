@@ -26,7 +26,7 @@ test('rewrites resolved registry urls', async t => {
       return line;
     }),
     err => {
-      t.is(err, void 0, 'finishes successfullly');
+      t.is(err, undefined, 'finishes successfullly');
       t.ok(result, 'all urls are secure');
     }
   ).resume();
@@ -48,7 +48,7 @@ test('CLI rewrites lockfile in-place', async t => {
       return line;
     }),
     err => {
-      t.is(err, void 0, 'finishes successfullly');
+      t.is(err, undefined, 'finishes successfullly');
       t.ok(result, 'all urls are secure');
     }
   ).resume();
